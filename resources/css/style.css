@@ -1,6 +1,6 @@
 
 
-/*make it cross-browser friendly*/
+/*make it cross-browser friendly and padding-friendly*/
 *{
     margin: 0;
     padding: 0;
@@ -14,4 +14,20 @@ html{
   font-size: 20px;
   font-weight: 300;
   text-rendering: optimizeLegibility;
+}
+
+.body{
+  height: 100%;
+}
+
+.row {
+  max-width: 1140px;
+  margin: 0 auto; /*center row*/
+}
+
+.test{
+  height: 100%;
+  position: absolute;
+  right: 0;
+  width: 20%;
 }

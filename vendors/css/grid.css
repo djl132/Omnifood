@@ -18,6 +18,8 @@
     content:"";
     display:table;
 }
+
+/*clear all child elements*/
 .row:after {
     clear:both;
 }
