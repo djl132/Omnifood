@@ -27,7 +27,15 @@ html{
   text-rendering: optimizeLegibility;
 }
 
-
+/*ADD A CLASS THAT CLEARS FLOATS*/
+.clearfix{zoom:1}
+.clearfix:after{  
+  display:block;
+  content: ".";
+  clear: both;
+  height: 0;
+  visibility: hidden;
+}
 
 /*-------------------------------*/
 /* REUSABLE COMPONENTS           */
@@ -253,4 +261,54 @@ anchor li items*/
   width: 100%; /*exact width of figure parent*/
   height: auto; /*keeps aspect ratio*/
   transform: scale(1.05);
+}
+
+/*------------------*/
+/* HOW IT WORKS           */
+/*------------------*/ 
+.section-steps{
+  background-color: #f4f4f4;
+}
+
+.steps-box:first-child{
+  text-align:right;
+  padding-right: 3%;
+  margin-top: 30px;
+}
+
+.steps-box:last-child{
+  padding-left: 3%;
+  margin-top: 70px;
+}
+
+.app-screen{
+  width: 40%;
+}
+
+.works-step{
+  margin-bottom: 50px;
+}
+
+/*LAST INSTANCE OF THIS CLASS, ADD MARGIN*/ß
+.works-step:last-of-type{
+  margin-bottom: 80px;
+}
+
+.works-step div{
+  display: inline-block; /*why?*/
+  height: 50px;
+  width: 50px;
+  border: 2px solid #e67e22;
+  border-radius: 50%;
+  text-align: center;
+  color: #e67e22;
+  padding: 5px;
+  float: left; /*how does this work here? workssteps aren't floated left? why do they wrap when this div is floated left?*/
+  font-size: 150%;
+  margin-right: 25px;
+}
+
+.btn-app img{
+  height:50px;
+  margin-right: 10px;
 }
