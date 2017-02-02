@@ -206,7 +206,13 @@ anchor li items*/
 .main-nav li a:active{
   border-bottom: 2px solid #e67e22;
 }
+/*------------------*/
+/* FEATURES            */
+/*------------------*/
 
+.section-features .long-copy{
+  margin-bottom: 40px;
+}
 
 /*------------------*/
 /* MEALS            */
@@ -219,6 +225,7 @@ anchor li items*/
 .meals-showcase{
   list-style: none;
   width: 100%; /*forces it to take up 100% width of the browser*/
+  padding:0;
 }
 
 .meals-showcase li{
@@ -229,9 +236,21 @@ anchor li items*/
 .meal-photo {
   width: 100%; 
   margin:0;
+  overflow: hidden;
+  background-color: black;
 }
 
 .meal-photo img{
+  opacity: 0.7; /*transparent to background - DARK FILTER*/
   width: 100%; /*exact width of figure parent*/
   height: auto; /*keeps aspect ratio*/
+  transform: scale(1.15);
+  transition: transform 0.5s;
+}
+
+.meal-photo img:hover{
+  opacity: 1.0;/*no filter*/
+  width: 100%; /*exact width of figure parent*/
+  height: auto; /*keeps aspect ratio*/
+  transform: scale(1.05);
 }
