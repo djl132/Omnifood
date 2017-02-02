@@ -34,7 +34,7 @@ html{
 /*-------------------------------*/
 
 .row {
-  max-width: 1140px;
+  max-width: 1140px; /*makes it flexible for smaller screen sizes*/
   margin: 0 auto; /*center row*/
 }
 
@@ -70,7 +70,7 @@ h2{
 }
 
 /*insert margin-topped block element 
-after to EXTEND Width of h2*/
+after to EXTEND height of h2*/
 h2:after{
   display: block;
   height: 2px;
