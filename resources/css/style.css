@@ -1,3 +1,11 @@
+/*
+Orange Color: #e67e22
+
+
+
+*/
+
+
 /*------------------*/
 /* BASIC SETUP */
 /*------------------*/
@@ -21,31 +29,87 @@ html{
 
 
 
-/*------------------*/
-/* REUSABLE COMPONENTS */
-/*------------------*/
+/*-------------------------------*/
+/* REUSABLE COMPONENTS           */
+/*-------------------------------*/
 
 .row {
   max-width: 1140px;
   margin: 0 auto; /*center row*/
 }
 
+section{
+  padding: 80px;
+}
+
+.box{
+  padding: 1%;
+}
+
 /* -------HEADINGS ----*/
-h1{
-  margin: 0;
-  font-size: 240%;
-  color: #fff;
+h1, h2, h3{
   font-weight: 300;
   text-transform: uppercase;
-  letter-spacing: 1px;
+}
+
+h1{
+  margin-top: 0;  
+  color: #fff;
+  font-size: 240%;
   word-spacing: 3px;
-  margin-top: 0;
   margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+h2{
+  font-size: 180%;
+  text-align: center;
+  margin-bottom: 30px;
+  word-spacing: 2px;
+  letter-spacing: 1px;
+}
+
+/*insert margin-topped block element 
+after to EXTEND Width of h2*/
+h2:after{
+  display: block;
+  height: 2px;
+  background-color: #e67e22;
+  content: "";
+  width: 100px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+h3{
+  font-size: 110%;
+  margin-bottom: 15px;
+}
+
+/* -------PARAGRAPH ----*/
+.long-copy{
+  line-height: 145%;
+  margin-left: 15%;
+  width: 70%;
+}
+
+.box p{
+  line-height: 145%;
+  font-size: 90%;
+}
+
+/* -------ICONS ----*/
+
+.icon-big{
+  font-size: 300%; /*increase icon size*/
+  display: block; /*force line-break*/
+  color: #e67e22;
+  margin-bottom: 10px;
 }
 
 
 /*------------------*/
-/* BUTTONS SETUP */
+/* BUTTONS */
 /*------------------*/
 
 /* unvisited link */
@@ -104,3 +168,41 @@ h1{
   transform: translate(-50%, -50%);
 }
 
+
+.logo {
+  height: 100px;
+  float: left;
+  width: auto;
+  margin-top: 20px;
+}
+
+/*container FOR PRESETTING POSITION & STYLE of 
+anchor li items*/
+.main-nav {
+  list-style: none;
+  margin-top: 55px;
+  float: right; /*used to display lis from top to bottom*/
+}
+
+/*TO INLINE THE ANCHORS*/
+.main-nav li{
+  display: inline-block; /*lines up lis from top(left) to bottom (right)*/
+  margin-left: 40px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+  padding: 8px 0;
+  text-decoration: none;
+  font-size: 90%;
+  text-transform: uppercase;
+  color: #fff;
+  border-bottom:2px solid transparent;
+  transition: border-bottom 0.2s;
+}
+
+/*highlighted border upon hover*/
+.main-nav li a:hover,
+.main-nav li a:active{
+  border-bottom: 2px solid #e67e22;
+}
