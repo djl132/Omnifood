@@ -1,10 +1,11 @@
 
 
-/*make it cross-browser friendly and padding-friendly*/
+/*get rid of any presets*/
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+  
   }
 
 html{
@@ -16,18 +17,26 @@ html{
   text-rendering: optimizeLegibility;
 }
 
-.body{
-  height: 100%;
-}
-
 .row {
   max-width: 1140px;
   margin: 0 auto; /*center row*/
 }
 
-.test{
-  height: 100%;
+
+header{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.67),rgba(0, 0, 0, 0.67)), url(img/hero.jpg);
+  height: 100vh; /*100% of the viewport*/
+  background-size: cover;
+  background-position: center;
+}
+.hero-text-box {
   position: absolute;
-  right: 0;
-  width: 20%;
+  top: 50%;
+  left: 50%;
+  width: 1140px;
+  transform: translate(-50%, -50%);
+}
+
+h1{
+  margin: 0;
 }
