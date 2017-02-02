@@ -39,6 +39,51 @@ header{
 
 h1{
   margin: 0;
-  font-size: 200%;
+  font-size: 240%;
   color: #fff;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  word-spacing: 3px;
+  margin-top: 0;
+  margin-bottom: 20px;
 }
+
+/* unvisited link */
+/* visited link */
+.btn:link, .btn:visited{
+  display: inline-block; /*WHAT'S SO IMPORTANT ABOUT THIS?*/
+  padding: 10px 30px;
+  font-weight: 300;
+  text-decoration: none;
+  border-radius: 200px;
+  /*SLOW COLORDARKEN ANIMATON*/
+  transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+/*NORMAL STATE*/
+.btn-full:link, .btn-full:visited{
+  border: 1px solid #e67e22; /*equal heights*/
+  background-color: #e67e22;
+  color: #fff;
+  margin-right: 15px;
+}
+.btn-ghost:link, .btn-ghost:visited{
+  border: 1px solid #e67e22;
+  color: #e67e22;
+}
+
+/* mouse over link */
+/* selected link */
+/*DARKEN BACKGROUND - HOVER AND CLICKED*/
+.btn:hover,.btn:active{
+  background-color: #cf6d17;
+}
+/*DARKEN BORDERS - WHEN HOVER AND CLICKED(ACTIVE)*/
+.btn-full:hover, .btn-full:active{
+  border: 1px solid #cf6d17; /*equal heights*/
+}
+.btn-ghost:hover, .btn-ghost:active{
+  border: 1px solid #cf6d17;
+  color: #fff;/*white text*/
+}
+
