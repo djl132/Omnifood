@@ -348,10 +348,10 @@ anchor li items*/
   margin-right: 10px;
 }
 /*------------------*/
-/* CITITES            */
+/* CITIES            */
 /*------------------*/
 
-/*RELATIVE WIDTH*/
+/*FILL BOX HORIZONTALLY AND SCALE*/
 .box img{
   width: 100%;
   margin-bottom: 15px;
