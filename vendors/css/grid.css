@@ -27,7 +27,7 @@
 /*  GRID COLUMN SETUP   ==================================================================== */
 
 .col {
-	display: block;
+	display: block; /*ISN'T THIS KIND OF A GIVEN THOUGH? YOU WON'T USE COL ON ANY ELEMENT THAT IS NOT A BLOCK ELEMENT OR ARE YOU?*/
 	float:left;
 	margin: 1% 0 1% 1.6%;
 }
