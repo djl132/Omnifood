@@ -528,14 +528,19 @@ footer li{
   margin-right:0;
 }
 
-.footer-nav li a:link, .footer-nav li a:visited,
+.footer-nav li a:link, .footer-nav li a:visited, 
 .social-links li a:link, .social-links li a:visited{
   border: none;
   color: #888;
+  transition: color 0.2s;
 }
 
-.footer-nav li a:hover, .footer-nav li a:active,
-.social-links li a:hover, .social-links li a:active{
+/* ADDED EFFECT FOR SOCIAL-LINKS links*/
+.social-links li a:link, .social-links li a:visited{
+  font-size:180%;
+}
+
+.footer-nav li a:hover, .footer-nav li a:active{
   color: #ddd;
 }
 
@@ -546,5 +551,26 @@ footer p{
   margin-top: 30px;
 }
 
+.ion-social-facebook,
+.ion-social-twitter,
+.ion-social-googleplus,
+.ion-social-instagram{
+  transition: color 0.2s;
+}
 
+ .ion-social-facebook:hover{
+  color: #3b5998;
+}
+
+.ion-social-twitter:hover{
+  color: #00aced;
+}
+
+.ion-social-googleplus:hover{
+  color: #dd4b39;
+}
+
+.ion-social-instagram:hover{
+  color: #007bb6;
+}
 
