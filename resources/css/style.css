@@ -498,4 +498,53 @@ input[type=checkbox]{
   outline:none;
 }
 
+/*------------------*/
+/* FOOTER             */
+/*------------------*/
+
+
+footer{
+  background-color: #333;
+  padding: 60px;
+}
+
+.footer-nav{
+  list-style: none;
+  float: left;
+}
+
+.social-links{
+  list-style: none;
+  float:right;
+}
+
+footer li{
+  display: inline-block; 
+  margin-right: 20px;
+}
+
+.social-links li:last-child,
+.footer-nav li:last-child{
+  margin-right:0;
+}
+
+.footer-nav li a:link, .footer-nav li a:visited,
+.social-links li a:link, .social-links li a:visited{
+  border: none;
+  color: #888;
+}
+
+.footer-nav li a:hover, .footer-nav li a:active,
+.social-links li a:hover, .social-links li a:active{
+  color: #ddd;
+}
+
+footer p{
+  color: #888;
+  text-align: center;
+  font-size: 90%;
+  margin-top: 30px;
+}
+
+
 
