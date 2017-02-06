@@ -226,6 +226,7 @@ input[type=submit]:hover,input[type=submit]:active{
 }
 
 .logo-black {
+    display:none;
     height: 50px;
     float: left;
     margin: 5px 0;
@@ -276,7 +277,7 @@ anchor li items*/
 .sticky .main-nav{margin-top:18px;}
 
 .sticky .main-nav li a:link,
-.sticky .main-nav li a:link{
+.sticky .main-nav li a:visited{
   color: #555;
   padding: 16px 0;
 }
