@@ -1,12 +1,27 @@
 
 /*Big tablet to 1200px (width smaller than the 1140px row */
 @media only screen and (max-width: 1200px){
+  .hero-text-box {
+    width: 100%;
+    padding: 0 2%; /*center the text using relative padding*/
+  }
   
+  /*push in information inside of each section*/
+  .row{
+    padding: 0 2%;
+  }
 }
 
 /*small tablet to big tablet*/
+/*PUSH OUT SECTION INFORMATION*/
+/*as you decrease in screen size, you want to decrease font-size but also pull things closer and decrease whitespace*/
 @media only screen and (max-width: 1023px){
-  
+  body{font-size: 18px;} 
+  section{padding:60px 0;} /*here, we decrease vertical whitespace and enlarge text, by pulling it in.*/
+  .long-copy{
+    width: 80%;
+    margin-left: 10%;
+  }
 } 
 
 /*small phones & tablets*/
