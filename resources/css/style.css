@@ -141,6 +141,7 @@ a:link,a:visited{
   text-decoration: none;
   border-bottom: 1px solid #e67e22;
   padding-bottom: 1px;
+  -webkit-transition: border-bottom 0.2s, color 0.2s;
   transition: border-bottom 0.2s, color 0.2s;
 }
 
@@ -162,6 +163,7 @@ input[type=submit]{
   text-decoration: none;
   border-radius: 200px;
   /*SLOW COLORDARKEN ANIMATON*/
+  -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
   transition: background-color 0.2s, border 0.2s, color 0.2s;
 }
 /*NORMAL STATE*/
@@ -199,6 +201,7 @@ input[type=submit]:hover,input[type=submit]:active{
 /*------------------*/
 
  header{
+  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.67),rgba(0, 0, 0, 0.67)), url(img/hero.jpg);
   background-image: linear-gradient(rgba(0, 0, 0, 0.67),rgba(0, 0, 0, 0.67)), url(img/hero.jpg);
   height: 100vh; /*100% of the viewport*/
   background-size: cover;
@@ -210,6 +213,7 @@ input[type=submit]:hover,input[type=submit]:active{
   top: 50%;
   left: 50%;
   width: 1140px;
+  -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
 
@@ -243,6 +247,7 @@ anchor li items*/
   text-transform: uppercase;
   color: #fff;
   border-bottom:2px solid transparent;
+  -webkit-transition: border-bottom 0.2s;
   transition: border-bottom 0.2s;
 }
 
@@ -289,14 +294,19 @@ anchor li items*/
   opacity: 0.7; /*transparent to background - DARK FILTER*/
   width: 100%; /*exact width of figure parent*/
   height: auto; /*keeps aspect ratio*/
+  -webkit-transform: scale(1.15);
   transform: scale(1.15);
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
   transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
 }
 
 .meal-photo img:hover{
   opacity: 1.0;/*no filter*/
   width: 100%; /*exact width of figure parent*/
   height: auto; /*keeps aspect ratio*/
+  -webkit-transform: scale(1.05);
   transform: scale(1.05);
 }
 
@@ -377,6 +387,7 @@ anchor li items*/
 
 /*GRADIENT BACKGROUND OF BLACK*/
 .section-testimonials{
+  background-image: -webkit-linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)),url(img/back-customers.jpg);
   background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)),url(img/back-customers.jpg);
   background-size: cover; /*make sure it doesn't cut off*/
   color: white;
@@ -540,6 +551,7 @@ footer li{
 .social-links li a:link, .social-links li a:visited{
   border:none;
   color: #888;
+  -webkit-transition: color 0.2s;
   transition: color 0.2s;
 }
 
@@ -555,6 +567,7 @@ footer li{
 .ion-social-twitter,
 .ion-social-googleplus,
 .ion-social-instagram{
+  -webkit-transition: color 0.2s;
   transition: color 0.2s;
 }
 
