@@ -19,13 +19,14 @@ Orange Color: #e67e22
   
   }
 
-html{
+html, body{
   background-color: white;
   color: #555555;
   font-family: 'Lato', 'Arial', sans-serif;
   font-size: 20px;
   font-weight: 300;
   text-rendering: optimizeLegibility;
+  overflow-x: hidden;
 }
 
 /*ADD A CLASS THAT CLEARS FLOATS*/
