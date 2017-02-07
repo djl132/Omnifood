@@ -49,7 +49,36 @@
     width:100%;
     margin: 0 0 4% 0; /*GET RID OF MARGINS*/
   } /*FORCE LINEBREAK FOR EACH COLUMN*/
-  .main-nav{display:none;}
+  
+  .main-nav{
+    float:left;
+    margin-left:25px;
+    margin-top:35px;
+    display:none;
+  }
+  
+  .mobile-nav-icon{
+    display: inline-block;
+    float:right;
+  }
+  .main-nav li{
+    display:block;
+  }
+  
+  .main-nav li a:link,
+  .main-nav li a:visited{
+    display:block;
+    border:0;
+    padding: 10px 0;
+    font-size:100%;
+  }
+  
+  .sticky .main-nav{margin-top: 10px;}
+  
+  .sticky .main-nav li a:link,
+  .sticky .main-nav li a:visited{padding: 10px 0;}
+  .sticky .mobile-nav-icon{margin-top: 10px;}
+  .sticky .mobile-nav-icon i{color:#555;}
   
   h1{font-size: 180%;}
   h1{font-size: 150%;}
